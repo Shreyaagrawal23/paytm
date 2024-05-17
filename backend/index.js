@@ -8,4 +8,4 @@ app.use(cors());
 app.use(express.json())  //bodyparser
 app.use("/api/v1", mainRouter)
 
-app.listen(3000)
+app.listen(3001)
