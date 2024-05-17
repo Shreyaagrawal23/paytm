@@ -13,9 +13,9 @@ const signupBody = zod.object({
 	password: zod.string()
 })
 
-router.post('/users', async (req, res) => {
+router.post('/signup', async (req, res) => {
     const { success } = signupBody.safeParse(req.body)
-    if (!sucesss) {
+    if (!success) {
         return res.status(411).json({
             message: "Incorrect inputs"
         })
