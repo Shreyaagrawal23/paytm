@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useSearchParams } from "react-router-dom"
-export const SendMoney = () => {
+ const SendMoney = () => {
     const searchParams = useSearchParams();
     const friendId = searchParams.get("id");
     const friendName = searchParams.get("name");
@@ -54,3 +54,4 @@ export const SendMoney = () => {
       </div>
     </div>
 }
+export default SendMoney;

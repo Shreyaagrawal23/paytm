@@ -1,12 +1,12 @@
 import { useState } from "react"
-import { BottomWarning } from "../components/BottomWarning"
+import { ButtonWarning } from "../components/ButtonWarning"
 import { Button } from "../components/Button"
 import { Heading } from "../components/Heading"
 import { InputBox } from "../components/InputBox"
 import { SubHeading } from "../components/SubHeading"
 import axios from "axios"
 
-export const Signup = () => {
+ const Signup = () => {
   const [firstName ,setFirstName]=useState("")
   const [lastName ,setLastName]=useState("")
   const [username ,setUsername]=useState("")
@@ -32,8 +32,9 @@ export const Signup = () => {
               localStorage.setItem("token", response.data.token)
           }} label={"Sign up"} />
         </div>
-        <BottomWarning label={"Already have an account?"} buttonText={"Sign in"} to={"/signin"} />
+        <ButtonWarning label={"Already have an account?"} buttonText={"Sign in"} to={"/signin"} />
       </div>
     </div>
   </div>
 }
+export default Signup

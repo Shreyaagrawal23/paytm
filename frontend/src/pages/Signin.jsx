@@ -1,10 +1,10 @@
-import { BottomWarning } from "../components/BottomWarning"
+import { ButtonWarning } from "../components/ButtonWarning";
 import { Button } from "../components/Button"
 import { Heading } from "../components/Heading"
 import { InputBox } from "../components/InputBox"
 import { SubHeading } from "../components/SubHeading"
 
-export const Signin = () => {
+ const Signin = () => {
 
     return <div className="bg-slate-300 h-screen flex justify-center">
     <div className="flex flex-col justify-center">
@@ -16,8 +16,9 @@ export const Signin = () => {
         <div className="pt-4">
           <Button label={"Sign in"} />
         </div>
-        <BottomWarning label={"Don't have an account?"} buttonText={"Sign up"} to={"/signup"} />
+        <ButtonWarning label={"Don't have an account?"} buttonText={"Sign up"} to={"/signup"} />
       </div>
     </div>
   </div>
 }
+export default Signin;
